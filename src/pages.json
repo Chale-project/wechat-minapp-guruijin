@@ -1,0 +1,307 @@
+{
+	"pages": [
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "固瑞锦建材"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录-固瑞锦建材",
+				"usingComponents": {}
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "pages/subPackageA",
+			"pages": [
+				{
+					"path": "address/addressAdd",
+					"style": {
+						"navigationBarTitleText": "添加地址-固瑞锦建材",
+						"usingComponents": {
+							"van-icon": "/wxcomponents/vant/icon/index",
+							"van-cell": "/wxcomponents/vant/cell/index",
+							"van-field": "/wxcomponents/vant/field/index",
+							"van-cell-group": "/wxcomponents/vant/cell-group/index"
+						}
+					}
+				},
+				{
+					"path": "address/addressList",
+					"style": {
+						"navigationBarTitleText": "客户地址-固瑞锦建材",
+						"usingComponents": {}
+					}
+				},
+				{
+					"path": "goodsCategory/categoryList",
+					"style": {
+						"navigationBarTitleText": "分类管理-固瑞锦建材",
+						"usingComponents": {}
+					}
+				},
+				{
+					"path": "goods/goodsSpec",
+					"style": {
+						"navigationBarTitleText": "设置商品规格-固瑞锦建材",
+						"usingComponents": {
+							"van-cell": "/wxcomponents/vant/cell/index",
+							"van-field": "/wxcomponents/vant/field/index",
+							"van-cell-group": "/wxcomponents/vant/cell-group/index"
+						}
+					}
+				},
+				{
+					"path": "goods/goodsAdd",
+					"style": {
+						"navigationBarTitleText": "添加商品-固瑞锦建材",
+						"usingComponents": {
+							"van-icon": "/wxcomponents/vant/icon/index",
+							"van-cell": "/wxcomponents/vant/cell/index",
+							"van-field": "/wxcomponents/vant/field/index",
+							"van-cell-group": "/wxcomponents/vant/cell-group/index"
+						}
+					}
+				},
+				{
+					"path": "goods/goodsList",
+					"style": {
+						"navigationBarTitleText": "商品管理-固瑞锦建材",
+						"usingComponents": {
+							"van-sticky": "/wxcomponents/vant/sticky/index",
+							"van-tab": "/wxcomponents//vant/tab/index",
+							"van-tabs": "/wxcomponents/vant/tabs/index"
+						}
+					}
+				},
+				{
+					"path": "goodsBatch/batchManage",
+					"style": {
+						"navigationBarTitleText": "批量管理-固瑞锦建材",
+						"usingComponents": {
+							"van-sticky": "/wxcomponents/vant/sticky/index",
+							"van-tab": "/wxcomponents//vant/tab/index",
+							"van-tabs": "/wxcomponents/vant/tabs/index"
+						}
+					}
+				},
+				{
+					"path": "order/orderCreate",
+					"style": {
+						"navigationBarTitleText": "订单录入-固瑞锦建材",
+						"usingComponents": {
+							"van-icon": "/wxcomponents/vant/icon/index",
+							"van-cell": "/wxcomponents/vant/cell/index",
+							"van-field": "/wxcomponents/vant/field/index",
+							"van-cell-group": "/wxcomponents/vant/cell-group/index"
+						}
+					}
+				},
+				{
+					"path": "order/orderList",
+					"style": {
+						"navigationBarTitleText": "订单管理-固瑞锦建材",
+						"enablePullDownRefresh": true,
+						"usingComponents": {
+							"van-tab": "/wxcomponents//vant/tab/index",
+							"van-tabs": "/wxcomponents/vant/tabs/index"
+						}
+					}
+				},
+				{
+					"path": "order/orderDetail",
+					"style": {
+						"navigationBarTitleText": "订单详情-固瑞锦建材",
+						"enablePullDownRefresh": true,
+						"app-plus": {
+							"bounce": "none"
+						},
+						"usingComponents": {}
+					}
+				},
+				{
+					"path": "delivery/deliveryList",
+					"style": {
+						"navigationBarTitleText": "配送员管理-固瑞锦建材",
+						"usingComponents": {}
+					}
+				},
+				{
+					"path": "delivery/deliveryAdd",
+					"style": {
+						"navigationBarTitleText": "添加配送员-固瑞锦建材",
+						"usingComponents": {
+							"van-cell": "/wxcomponents/vant/cell/index",
+							"van-field": "/wxcomponents/vant/field/index",
+							"van-cell-group": "/wxcomponents/vant/cell-group/index"
+						}
+					}
+				},
+				{
+					"path": "customer/customerList",
+					"style": {
+						"navigationBarTitleText": "客户管理-固瑞锦建材",
+						"usingComponents": {}
+					}
+				},
+				{
+					"path": "customer/customerAdd",
+					"style": {
+						"navigationBarTitleText": "添加客户-固瑞锦建材",
+						"usingComponents": {
+							"van-cell": "/wxcomponents/vant/cell/index",
+							"van-field": "/wxcomponents/vant/field/index",
+							"van-cell-group": "/wxcomponents/vant/cell-group/index"
+						}
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/subPackageB",
+			"pages": [
+				{
+					"path": "print/print",
+					"style": {
+						"navigationBarTitleText": "打印标签-固瑞锦建材",
+						"backgroundColor": "#0d6eb8",
+						"enablePullDownRefresh": true,
+						"usingComponents": {
+							"van-cell": "/wxcomponents/vant/cell/index",
+							"van-field": "/wxcomponents/vant/field/index",
+							"van-cell-group": "/wxcomponents/vant/cell-group/index"
+						}
+					}
+				},
+				{
+					"path": "stockIn/goodsIn",
+					"style": {
+						"navigationBarTitleText": "待入库清单-固瑞锦建材",
+						"usingComponents": {}
+					}
+				},
+				{
+					"path": "stockOut/goodsOut",
+					"style": {
+						"navigationBarTitleText": "待确认出库-固瑞锦建材",
+						"usingComponents": {}
+					}
+				},
+				{
+					"path": "stockIn/goodsInRecord",
+					"style": {
+						"navigationBarTitleText": "入库记录-固瑞锦建材",
+						"usingComponents": {
+							"van-sticky": "/wxcomponents/vant/sticky/index"
+						}
+					}
+				},
+				{
+					"path": "stockOut/goodsOutRecord",
+					"style": {
+						"navigationBarTitleText": "出库记录-固瑞锦建材",
+						"usingComponents": {
+							"van-sticky": "/wxcomponents/vant/sticky/index"
+						}
+					}
+				},
+				{
+					"path": "stockOut/goodsOutRecordDetail",
+					"style": {
+						"navigationBarTitleText": "出库记录详情-固瑞锦建材",
+						"usingComponents": {}
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/subPackageC",
+			"pages": []
+		},
+		{
+			"root": "pages/subPackageD",
+			"pages": [
+				{
+					"path": "account/accountList",
+					"style": {
+						"navigationBarTitleText": "账号管理-固瑞锦建材",
+						"usingComponents": {}
+					}
+				},
+				{
+					"path": "account/accountAdd",
+					"style": {
+						"navigationBarTitleText": "添加账号-固瑞锦建材",
+						"usingComponents": {
+							"van-cell": "/wxcomponents/vant/cell/index",
+							"van-field": "/wxcomponents/vant/field/index",
+							"van-cell-group": "/wxcomponents/vant/cell-group/index"
+						}
+					}
+				},
+				{
+					"path": "role/roleList",
+					"style": {
+						"navigationBarTitleText": "岗位管理-固瑞锦建材",
+						"usingComponents": {}
+					}
+				},
+				{
+					"path": "role/roleAdd",
+					"style": {
+						"navigationBarTitleText": "添加岗位-固瑞锦建材",
+						"usingComponents": {
+							"van-cell": "/wxcomponents/vant/cell/index",
+							"van-field": "/wxcomponents/vant/field/index",
+							"van-cell-group": "/wxcomponents/vant/cell-group/index"
+						}
+					}
+				},
+				{
+					"path": "profile/profile",
+					"style": {
+						"navigationBarTitleText": "个人信息-固瑞锦建材",
+						"usingComponents": {
+							"van-cell": "/wxcomponents/vant/cell/index",
+							"van-field": "/wxcomponents/vant/field/index",
+							"van-cell-group": "/wxcomponents/vant/cell-group/index"
+						}
+					}
+				},
+				{
+					"path": "system/system",
+					"style": {
+						"navigationBarTitleText": "系统设置-固瑞锦建材",
+						"usingComponents": {
+							"van-cell": "/wxcomponents/vant/cell/index",
+							"van-cell-group": "/wxcomponents/vant/cell-group/index"
+						}
+					}
+				},
+				{
+					"path": "system/property",
+					"style": {
+						"navigationBarTitleText": "账号属性配置-固瑞锦建材",
+						"usingComponents": {
+							"van-cell": "/wxcomponents/vant/cell/index",
+							"van-cell-group": "/wxcomponents/vant/cell-group/index"
+						}
+					}
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "固瑞锦建材",
+		"navigationBarBackgroundColor": "#0d6eb8",
+		"backgroundColor": "#F8F8F8",
+		"usingComponents": {
+			"m-tree": "/components/m-tree"
+		}
+	}
+}

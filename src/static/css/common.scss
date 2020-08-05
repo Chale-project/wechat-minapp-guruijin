@@ -1,0 +1,166 @@
+page {
+  background-color: $uni-bg-color-grey;
+  color: $uni-text-color;
+  font-size: $uni-font-size-base;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+/* #ifdef MP-BAIDU */
+swan-template {
+  width: 100%;
+  min-height: 100%;
+}
+/* 原生组件模式下需要注意组件外部样式 */
+custom-component {
+  width: 100%;
+  min-height: 100%;
+}
+/* #endif */
+
+/* #ifdef MP-ALIPAY */
+page {
+  min-height: 100vh;
+}
+/* #endif */
+
+form {
+  display: block;
+}
+
+image {
+  vertical-align: middle;
+}
+
+.clearfix {
+  clear: both;
+  overflow: hidden;
+  _zoom: 1;
+}
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ellipsis-2 {
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal !important;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+button {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $uni-spacing-row-base;
+  padding-right: $uni-spacing-row-base;
+  box-sizing: border-box;
+  font-size: $uni-font-size-lg;
+  text-align: center;
+  text-decoration: none;
+  line-height: 2.75;
+  border-radius: $uni-border-radius-base;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  color: #000;
+  background-color: rgba(248, 248, 248, 1);
+}
+
+button.button-hover {
+  opacity: 0.6;
+}
+button[disabled] {
+  opacity: 0.6;
+}
+
+button[type="default"] {
+  background-color: $uni-color-primary;
+  color: #fff;
+}
+
+button.button-hover[type="default"] {
+  opacity: 0.6;
+  color: $uni-text-color-inverse;
+  background-color: $uni-color-primary;
+}
+
+button[disabled][type="default"] {
+  opacity: 0.6;
+  color: $uni-text-color-inverse;
+  background-color: $uni-color-primary;
+}
+
+button.but-block {
+  padding: 0;
+  line-height: normal;
+  border-radius: 0;
+  background: none;
+  text-align: left;
+  font-size: $uni-font-size-base;
+}
+
+button.but-block.button-hover {
+  opacity: 0.8;
+}
+
+button.but-block::after {
+  width: 0;
+  height: 0;
+  border: none;
+  border-radius: 0;
+}
+
+/*  #ifdef  MP-ALIPAY */
+button.but-default {
+  background-color: $uni-color-primary;
+  color: #fff;
+}
+
+button.but-default.button-hover {
+  opacity: 0.6;
+  color: $uni-text-color-inverse;
+  background-color: $uni-color-primary;
+}
+
+button.but-default[disabled] {
+  opacity: 0.6;
+  color: $uni-text-color-inverse;
+  background-color: $uni-color-primary;
+}
+/*  #endif  */
+
+button.but-operation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $uni-text-color;
+  line-height: 2.4;
+  background-color: transparent;
+  image,
+  .but-icon {
+    display: inline-block;
+    width: 40upx;
+    height: 40upx;
+    margin-right: 10upx;
+    line-height: 40upx;
+  }
+}
+
+button.but-operation.button-hover {
+  opacity: 0.6;
+  color: $uni-text-color;
+  background-color: transparent;
+}
+button.but-operation[disabled] {
+  opacity: 0.6;
+  color: $uni-text-color;
+  background-color: transparent;
+}
+button.but-operation::after {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
